@@ -21,6 +21,7 @@
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^16.0.0",
+    "dependency-cruiser": "^16.10.1",
     "rollup": "^4.35.0",
     "rollup-plugin-cleandir": "^3.0.0",
     "rollup-plugin-ignore": "^1.0.10"
