@@ -6,7 +6,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "node --import=extensionless/register --watch index.js",
-    "bundle": "rollup -c"
+    "bundle": "rollup -c",
+    "bundle:watch": "pnpm run bundle --watch"
   },
   "keywords": [],
   "author": "",
