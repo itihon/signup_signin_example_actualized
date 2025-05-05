@@ -4,7 +4,7 @@ import isLength from 'validator/es/lib/isLength';
 const isMaxLength = (max) => Predicate(
   (value) => isLength(value, { max }),
   {
-    err: `Must be no longer than ${max} characters.`
+    err: `Should not be longer than ${max} characters.`
   }
 );
 
