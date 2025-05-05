@@ -2,6 +2,7 @@ import { Validation } from 'isomorphic-validation';
 import emailV from '../validations/email.js';
 import passwordV from '../validations/password.js';
 import isPasswordConfirmed from '../predicates/is-password-confirmed.js';
+import isEmailNotRegistered from '../predicates/is-email-not-registered.js';
 import applyEffects from '../ui/apply-effects.js';
 
 const pwdConfirm = Validation();
@@ -13,6 +14,8 @@ const [signupForm, signupV] = Validation.profile(
   ['email', 'password', 'pwdConfirm'],
   [emailV, passwordV, pwdConfirm],
 );
+
+signupV.email.constraint(isEmailNotRegistered, { debounce: 5000 });
 
 Validation.glue(signupV.password, signupV.pwdConfirm)
   .constraint(isPasswordConfirmed);
