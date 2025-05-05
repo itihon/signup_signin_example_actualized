@@ -18,8 +18,8 @@ importers:
         specifier: ^1.9.9
         version: 1.9.9
       isomorphic-validation:
-        specifier: ^0.10.11
-        version: 0.10.11
+        specifier: ^0.11.0
+        version: 0.11.0
       validator:
         specifier: ^13.15.0
         version: 13.15.0
@@ -421,8 +421,8 @@ packages:
     resolution: {integrity: sha512-lJJV/5dYS+RcL8uQdBDW9c9uWFLLBNRyFhnAKXw5tVqLlKZ4RMGZKv+YQ/IA3OhD+RpbJa1LLFM1FQPGyIXvOA==}
     engines: {node: '>=12'}
 
-  isomorphic-validation@0.10.11:
-    resolution: {integrity: sha512-SLgz92K0EVybo1SradVvg2DNsj49PVHOCyfQ0tGjNizBXLqZIuyFFRlQmkY36GuWA+GvnFOYXGeifhbN97yt0w==}
+  isomorphic-validation@0.11.0:
+    resolution: {integrity: sha512-WdXaIjqh2xU+E79ijJfiDB/vakZJ4wOPGbGQDkYtubvauaZCig7fR+JDU33oVjk80Hur15n1xhEp8uF1SfpJbg==}
     hasBin: true
 
   json-schema-traverse@1.0.0:
@@ -1039,7 +1039,7 @@ snapshots:
 
   is-path-inside@4.0.0: {}
 
-  isomorphic-validation@0.10.11:
+  isomorphic-validation@0.11.0:
     dependencies:
       '@itihon/position-observer': 1.2.2
 
