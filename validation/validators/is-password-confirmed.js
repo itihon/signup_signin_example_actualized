@@ -1,9 +1,8 @@
 import { Predicate } from 'isomorphic-validation';
-
-const areTwoEqual = (value1, value2) => value1 === value2;
+import equals from 'validator/es/lib/equals';
 
 export default Predicate(
-  areTwoEqual, 
+  equals, 
   { 
     err: 'Password and password confirmation must be the same',
   }
