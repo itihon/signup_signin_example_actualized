@@ -1,9 +1,8 @@
 import { Predicate } from 'isomorphic-validation';
 
-// registered e-mail: emily.johnson@x.dummyjson.com
 const isEmailNotRegistered = (value) => fetch(
-  `https://dummyjson.com/users/filter?key=email&value=${value}`
-).then(res => res.json()).then(res => res.total === 0);
+  '/checkemail', { method: 'post', body: new URLSearchParams({ email: value })}
+).then(res => res.json());
 
 export default Predicate(
   isEmailNotRegistered, 
