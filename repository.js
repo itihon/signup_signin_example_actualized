@@ -3,7 +3,7 @@
  */
 
 const existingEmails = new Map([ 
-    ['w@w.w', 1], ['x@x.x', 2], ['y@y.y', 3], ['z@z.z', 4],
+    ['ww@ww.ww', 1], ['xx@xx.xx', 2], ['yy@yy.yy', 3], ['zz@zz.zz', 4],
 ]);
 
 export default {
