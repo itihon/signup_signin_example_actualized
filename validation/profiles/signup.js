@@ -15,7 +15,7 @@ const [signupForm, signupV] = Validation.profile(
   [emailV, passwordV, pwdConfirm],
 );
 
-signupV.email.constraint(isEmailNotRegistered, { debounce: 5000 });
+signupV.email.client.constraint(isEmailNotRegistered, { debounce: 5000 });
 
 Validation.glue(signupV.password, signupV.pwdConfirm)
   .constraint(isPasswordConfirmed);
