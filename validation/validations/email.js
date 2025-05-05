@@ -1,7 +1,7 @@
 import { Validation } from 'isomorphic-validation';
-import isEmail from '../predicates/is-email.js';
-import isMinLength from '../predicates/is-min-length.js';
-import isMaxLength from '../predicates/is-max-length.js';
+import isEmail from '../validators/is-email.js';
+import isMinLength from '../validators/is-min-length.js';
+import isMaxLength from '../validators/is-max-length.js';
 
 const emailV = Validation()
   .constraint(isMinLength(8), { next: false })

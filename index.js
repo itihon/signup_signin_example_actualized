@@ -2,7 +2,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import { signinV } from './validation/profiles/signin.js';
 import { signupV } from './validation/profiles/signup.js';
-import isEmailNotRegisteredS from './validation/predicates/is-email-not-registered-s.js';
+import isEmailNotRegisteredS from './validation/validators/is-email-not-registered-s.js';
 
 const app = express();
 const urlencodeParser = bodyParser.urlencoded({extended: false});

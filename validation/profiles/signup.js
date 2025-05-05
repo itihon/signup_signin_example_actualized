@@ -1,8 +1,8 @@
 import { Validation } from 'isomorphic-validation';
 import emailV from '../validations/email.js';
 import passwordV from '../validations/password.js';
-import isPasswordConfirmed from '../predicates/is-password-confirmed.js';
-import isEmailNotRegistered from '../predicates/is-email-not-registered.js';
+import isPasswordConfirmed from '../validators/is-password-confirmed.js';
+import isEmailNotRegistered from '../validators/is-email-not-registered.js';
 import applyEffects from '../ui/apply-effects.js';
 
 const pwdConfirm = Validation();

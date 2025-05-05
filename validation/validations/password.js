@@ -1,5 +1,5 @@
 import { Validation } from 'isomorphic-validation';
-import isStrongPassword from '../predicates/is-strong-password.js';
+import isStrongPassword from '../validators/is-strong-password.js';
 
 const passwordV = Validation()
   .constraint(isStrongPassword);
